@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Chao theo thoi gian
+    </title>
+    <style>
+        .greeting{
+            font-size: 23px;
+        }
+        .morning{
+            color: green;
+        }
+        .afternoon{
+            color: blue;
+        }
+        .evening{
+            color: red;
+        }
+        .time{
+            font-size: 18px;
+            color: blueviolet;
+        }
+    </style>
+    <body>
+        <h1 class="greeting" id="greeting">
+            Xin chao
+        </h1>
+        <p id="time">Full time</p>
+        <script>
+            var greeting= '';
+            var greetingEl=document.getElementById('greeting');
+            var className='';
+            var currentTime= new Date();
+            var curruntHour = currentTime.getHours();
+            if (curruntHour < 12){
+                greeting= 'Goodmorning';
+                className= 'morning'
+            }
+            else if (curruntHour < 18){
+                greeting = ' Goodafternoon'
+                className = 'afternoon'
+            }
+            else {
+                greeting= 'Good evening'
+                className = 'evening'
+            }
+            greetingEl.textContent= greeting;
+            greetingEl.className= className;
+            var elTime = document.getElementById('time');
+            elTime.textContent= 'Time:' + currentTime
+            elTime.className='time';
+</script>
+    </body>
+</html>
