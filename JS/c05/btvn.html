@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kho hàng, Menu</title>
+    <link rel="stylesheet" href="btvn.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="amout">
+        <h1>Hóa đơn mua hàng</h1>
+    </div>
+    <section>
+        <table>
+            <tr>
+                <td> </td>
+                <td>Số lượng </td>
+                <td> Gía sản phẩm</td>
+                <td> Thành tiền</td>
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td><input type="number" id="soluong1"  name="soluong1" min="0" onchange="caculator1()"></td>
+                <td>30</td>
+                <td><span id="total1" class="vang">0</span></td>
+            </tr>
+            <tr>
+                <td>Rượu</td>
+                <td><input type="number" id="soluong2" name="soluong2" min="0" onchange="caculator2()"></td>
+                <td>95</td>
+                <td> <span id="total2" class="vang">0</span></td>
+            </tr>
+            <tr>
+                <td>Nước ngọt</td>
+                <td><input type="number" id="soluong3" name="soluong3" min="0" onchange="caculator3()"></td>
+                <td>10</td>
+                <td><span id="total3" class="vang" >0</span></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2><p>Tổng giá trị đơn hàng : <span id="total" onchange="total()">0</span></p></h2>
+    </section>
+    <script src="btvn.js"></script>
+</body>
+</html>
