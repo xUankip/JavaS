@@ -46,6 +46,8 @@
         document.getElementById('total3').innerHTML = total3;
     }setInterval(caculator1,100);
     caculator1();
+var total = '';
+
 
 
     
