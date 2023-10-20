@@ -14,9 +14,7 @@
             document.getElementById('total1').classList.add('vang')
             document.getElementById('total1').classList.remove('hong')
         }
-    }setInterval(caculator1,100);
-    caculator1();
-    function caculator2(){
+    
         var giaTien2 = 95;
         var soLuong2 = document.getElementById('soluong2').value;
         var total2 = giaTien2*soLuong2;
@@ -31,10 +29,7 @@
             document.getElementById('total2').classList.remove('xanh')
         }
         document.getElementById('total2').textContent=total2;
-    }
-    setInterval(caculator2,100);
-    caculator2();
-    function caculator3(){
+    
         var giatien3 = 10;
         var soLuong3 = document.getElementById('soluong3').value;
         var total3 = giatien3*soLuong3;
@@ -49,8 +44,11 @@
             document.getElementById('total3').classList.remove('do')
         }
         document.getElementById('total3').innerHTML = total3;
-    }setInterval(caculator3,100);
-    caculator3();
+    }setInterval(caculator1,100);
+    caculator1();
+
+
+    
 
 
 
@@ -84,13 +82,3 @@
 // var total = myca + myca2 + myca3;
 // document.getElementById('total').innerHTML.innerHTML=total;
 // }
-// function changeColor(){
-//     const texEl=document.getElementById('total1');
-//     const currentColor=texEl.style.color;
-//     if (texEl > 100 && currentColor ==='black'){
-//         texEl.style.color='xanh';
-//     } else{
-//         texEl.style.color='black';
-//     }
-// }
-// setInterval(changeColor,10000)
