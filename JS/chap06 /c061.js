@@ -20,4 +20,4 @@ function checkTerms(event){
 }
 
 elForm.addEventListener('submit', checkTerms, false);
-elSelecPackage.addEventListener('change', packageHint, false);
+elSelecPackage.addEventListener('change',packageHint, false);
