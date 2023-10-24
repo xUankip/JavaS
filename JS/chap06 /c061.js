@@ -16,6 +16,7 @@ function packageHint(){
 function checkTerms(event){
     if (!elTerms.ckecked){
         elTermsHint.innerHTML = 'You must agree to the terms'
+        event.preventDefault();
     }
 }
 
